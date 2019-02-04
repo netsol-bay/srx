@@ -8,7 +8,7 @@ This REPO contains information about SRX300
 - Inbound ACL SETUP
 
 BGP LOGICAL TOPOLOGY:<br>
-<img src='https://github.com/netsol-bay/srx/raw/master/docs/BGP.png' height= 550 width=550>
+<img src='https://github.com/netsol-bay/srx/raw/master/docs/BGP.png' height= 450 width=550>
 
 
 
