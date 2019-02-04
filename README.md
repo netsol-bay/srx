@@ -7,6 +7,10 @@ This REPO contains information about SRX300
 - EBGP Peering
 - Inbound ACL SETUP
 
+BGP LOGICAL TOPOLOGY:<br>
+<img src='https://github.com/netsol-bay/srx/raw/master/docs/BGP.png' width=400>
+
+
 
 Todo
 ---------
