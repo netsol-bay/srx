@@ -14,7 +14,7 @@
     - debug: 
         msg: "{{ out.stdout_lines }}"
 
-    - name: VERSION  INFO
+    - name: Default Route  INFO
       cli_command:
         command: show route 0.0.0.0
 
