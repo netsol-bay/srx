@@ -6,7 +6,7 @@
   tasks:
     - name: DNS server setup
       cli_config:
-        config: "{{ lookup('template', '/change1.j2') }}"
+        config: "{{ lookup('template', '/change.j2') }}"
         
       vars:
         ansible_connection: network_cli
