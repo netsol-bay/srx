@@ -1,0 +1,15 @@
+set system name-server 4.2.2.2
+set system name-server 8.8.8.8
+
+set routing-options static route 192.168.1.0/24 next-hop 172.16.10.4
+set routing-options static route 192.168.2.0/24 next-hop 172.16.10.4
+set routing-options static route 192.168.31.0/24 next-hop 172.16.10.4
+
+set routing-options autonomous-system 200
+set protocols bgp group INTERNAP type external
+set protocols bgp group INTERNAP neighbor 1.1.1.1 peer-as 100
+
+set policy-options policy-statement static-bgp term 1 from protocol static
+set policy-options policy-statement static-bgp term 1 from route-filter 192.168.1.0/24 exact
+set policy-options policy-statement static-bgp term 1 then accept
+set protocols bgp group INTERNAP export static-bgp

@@ -1,0 +1,16 @@
+--
+
+- name: Configuration Playbook
+  hosts: junos
+  gather_facts: false
+  tasks:
+    - name: DNS server setup
+      cli_config:
+        config: "{{ lookup('template', '/change1.j2') }}"
+        
+      vars:
+        ansible_connection: network_cli
+      register: out
+      ignore_errors: yes
+
+
