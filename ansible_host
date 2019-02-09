@@ -1,0 +1,8 @@
+[junos]
+br1 ansible_host=10.0.0.111
+br2 ansible_host=10.0.0.114
+
+[junos:vars]
+ansible_connection=network_cli 
+ansible_network_os=junos
+
