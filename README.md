@@ -1,7 +1,8 @@
 SRX CONFIGURATION
 =================
 
-This REPO contains information about SRX300
+This REPO contains information about SRX345 configuration as Border router running BGP. 
+
 
 - Change of data forwarding mode(Flow > packet)
 - EBGP Peering
