@@ -1,5 +1,5 @@
-SRX CONFIGURATION
-=================
+SRX 345 CONFIGURATION
+=====================
 
 This REPO contains information about SRX345 configuration as Border router running BGP. 
 
