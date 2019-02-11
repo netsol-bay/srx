@@ -1,0 +1,12 @@
+---
+- name: Show CMD
+  cli_command:
+    command: "{{ show_cmd }}"     
+  vars:
+    ansible_connection: network_cli
+  register: out
+  ignore_errors: yes
+- debug: 
+    msg: "{{ out.stdout_lines }}"
+
+
